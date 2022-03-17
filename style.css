@@ -1,0 +1,96 @@
+/* FONT IMPORT */
+
+/* LATO */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* ROBOTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* MAIN STYLES */
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #171717;
+    color: #ECECEC;
+}
+
+/* MEDIA STYLES */
+
+@media only screen and (min-width: 600px) {
+    
+    .header {
+        margin: auto;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* LOGO */
+
+    .logo {
+        font-size: 1.5vw;
+    }
+
+    .secname {
+        font-weight: 900;
+    }
+    
+    /* NAVBAR */
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        column-gap: 4vw;
+        font-size: 1.5vw;
+    }
+
+    .bigimage {
+
+    }
+    
+    .nav-option {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    
+    .nav-option:hover {
+        cursor: pointer;
+        -webkit-box-shadow: inset 0px -3px 0px 0px #DA0037;
+        -moz-box-shadow: inset 0px -3px 0px 0px #DA0037;
+        box-shadow: inset 0px -3px 0px 0px #DA0037;
+        transition: ease-in-out 0.2s;
+        
+    }
+
+    .nav-option:active {
+        color:#DA0037 ;
+        transition: ease-in-out 0.1s;
+    }
+    .bigimage {
+        margin: auto;
+        width: 95vw;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    .bigimage img {
+        width:95%;
+        margin: auto;
+    }
+    .quote {
+        position: absolute;
+        right: 10vw;
+        font-size: 4vw;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
