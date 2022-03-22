@@ -12,10 +12,21 @@
 
 * {
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #171717;
+    color: #ECECEC;
+    margin: 0;
+}
+
+a:visited, a:link {
+    text-decoration: none;
     color: #ECECEC;
 }
 
@@ -24,17 +35,28 @@ body {
 @media only screen and (min-width: 600px) {
     
     .header {
+        position: fixed;
+        padding-top: 3vw;
+        padding-bottom: 1.5vw;
         margin: auto;
-        width: 80vw;
+        width: 100vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: #171717;
+        z-index: 4;
+
+        -webkit-box-shadow: 0px 10px 10px 0px rgba(23, 23, 23, 1);
+        -moz-box-shadow: 0px 10px 35px 0px rgba(23, 23, 23, 1);
+        box-shadow: 0px 10px 35px 0px rgba(23, 23, 23, 1);
     }
     
     /* LOGO */
 
     .logo {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
     .secname {
@@ -47,16 +69,12 @@ body {
         display: flex;
         flex-direction: row;
         column-gap: 4vw;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
-    .bigimage {
-
-    }
-    
     .nav-option {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
     }
     
     .nav-option:hover {
@@ -72,6 +90,9 @@ body {
         color:#DA0037 ;
         transition: ease-in-out 0.1s;
     }
+
+    /* BIG IMAGE */
+
     .bigimage {
         margin: auto;
         width: 95vw;
@@ -79,15 +100,165 @@ body {
         align-items: center;
         height: 100vh;
     }
+
     .bigimage img {
-        width:95%;
+        width:80%;
         margin: auto;
     }
+
     .quote {
         position: absolute;
         right: 10vw;
+        top: 50vh;
         font-size: 4vw;
         width: 40%;
+    }
+
+    .goup {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+    }
+
+    /* PROJECTS */
+
+    .projects-lib {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        justify-content: center;
+        align-items: center flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 25vh;
+    }
+
+    .project-card {
+        width: 30%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        border-radius: 15px;
+        min-width: 320px;
+    }
+
+    .project-card-red {
+        background: #DA0037;
+    }
+
+    .project-card-white {
+        background: #ECECEC;
+    }
+    .section-title {
+        margin-bottom: 10vh;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    .section-title hr {
+        width: 30vw;
+        background-color: #ECECEC;
+        border: 2px solid white;
+    }
+
+    .project-card-img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+        height: 60%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .project-card-name {
+        font-size: 1.7vw;
+        margin-top: 5vw;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-bottom: 1vw;
+    }
+
+    .project-card-description {
+        font-size: 1vw;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .aboutme-desc {
+        font-size: 2vw;
+        margin: auto;
+        width: 80vw;
+        margin-bottom: 25vh;
+    }
+
+    .aboutme-desc li {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+    .link {
+        background-color: #DA0037;
+        padding: 0.2vw;
+        border-radius: 0.5vw;
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    .contact {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .contact h2 {
+        font-size: 2.2vw;
+        margin-bottom: 6vh;
+        text-align: center;
+    }
+
+    .space-under {
+        margin-bottom: 5vh;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .contact-icon {
+        width: 2vw;
+        margin: 1vw;
+    }
+
+    .contact li {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact a:link {
+        text-decoration: underline;
     }
 }
 
