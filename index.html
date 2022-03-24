@@ -7,19 +7,19 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/logo.svg">
+    <link rel="icon" href="./images/2412744261594722074.png">
     <title>Patryk Kulma - Portfolio</title>
 </head>
-<body style="overflow: scroll;">
+<body id="top">
     <div id="header" class="header">
         <div class="logo">
             <p>Patryk<span class="secname">Kulma</span></p>
         </div>
         <div class="navbar">
-            <a class="nav-option" id="home">Home</a>
-            <a class="nav-option" id="aboutme">About Me</a>
-            <a class="nav-option" id="projects">Projects</a>
-            <a class="nav-option" id="contact">Contact</a>
+            <a href="#top" class="nav-option" id="home">Home</a>
+            <a href="#abtme" class="nav-option" id="aboutme">About Me</a>
+            <a href="#proj" class="nav-option" id="projects">Projects</a>
+            <a href="#cont" class="nav-option" id="contact">Contact</a>
         </div>
     </div>
     <div class="bigimage">
@@ -102,6 +102,10 @@
                 A simple way to present a QR code!
             </p>
         </div>
+
+        <div id="cont">
+
+        </div>
         <div class="project-card-white project-card">
             <img class="project-card-img" src="./images/apple-studio-display-2.jpg" alt="qrcode">
             <h4 class="project-card-name">QR code component</h4>
@@ -118,7 +122,7 @@
     <div class="contact">
         <div class="contact-div">
             <h2 class="space-under">Contact</h2>
-            <div>
+            <div class="contact-card-content">
                 <ul>
                     <li>
                         <img class="contact-icon" src="./images/mail.png" alt="mail">
@@ -132,15 +136,15 @@
             </div>
         </div>
         <div class="contact-div">
-            <h2 class="space-under">My links</h2>
-            <div>
+            <h2 style="color: #DA0037;" class="space-under">My links</h2>
+            <div class="contact-card-content">
                 <ul>
                     <li>
                         <img src="./images/cv.png" alt="CV" class="contact-icon">
                         <a href="https://drive.google.com/file/d/1nSWgo7dYeXWKGlJVjSTWYr1HQaSWd-i8/view?usp=sharing" target="_blank">CV</a>
                     </li>
                     <li>
-                        <img class="contact-icon" src="./images/fem.png" alt="FrontEndMentor">
+                        <img class="fem contact-icon" src="./images/fem.png" alt="FrontEndMentor">
                         <a href="https://www.frontendmentor.io/profile/pvczku" target="_blank">Front End Mentor</a> 
                     </li>
                     <li>
