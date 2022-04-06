@@ -1,3 +1,4 @@
+
 /* FONT IMPORT */
 
 /* LATO */
@@ -18,29 +19,33 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: #171717;
-    color: #ECECEC;
+    color: #f0f0f0;
     margin: 0;
-    padding-bottom: 5vh;
-    margin-bottom: 5vw;
 }
 
 a:visited, a:link {
     text-decoration: none;
-    color: #ECECEC;
+    color: var(--font-color);
 }
 
 /* MEDIA STYLES */
 
 @media only screen and (min-width: 600px) {
     
+    html {
+        scroll-padding-top: 7vw;
+    }
+
     .header {
         position: fixed;
-        padding-top: 1.7vw;
-        padding-bottom: 1.5vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.3vw;
         margin: auto;
         width: 100vw;
         padding-left: 10vw;
@@ -51,9 +56,9 @@ a:visited, a:link {
         background-color: #171717;
         z-index: 4;
 
-        -webkit-box-shadow: 0px 10px 10px 0px rgba(23, 23, 23, 1);
-        -moz-box-shadow: 0px 10px 35px 0px rgba(23, 23, 23, 1);
-        box-shadow: 0px 10px 35px 0px rgba(23, 23, 23, 1);
+        -webkit-box-shadow: 0px .7vw 10px 0px rgba(23, 23, 23, 1);
+        -moz-box-shadow: 0px .7vw 35px 0px rgba(23, 23, 23, 1);
+        box-shadow: 0px .7vw 35px 0px rgba(23, 23, 23, 1);
     }
     
     /* LOGO */
@@ -105,7 +110,7 @@ a:visited, a:link {
     }
 
     .bigimage img {
-        width:80%;
+        width:70%;
         margin: auto;
     }
 
@@ -117,54 +122,106 @@ a:visited, a:link {
         width: 40%;
     }
 
-    .goup {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */
-        background-color: red; /* Set a background color */
-        color: white; /* Text color */
-        cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
-    }
-
     /* PROJECTS */
 
     .projects-lib {
         margin: auto;
-        width: 90%;
+        padding: 0 5vw;
         display: flex;
-        column-gap: 2vw;
-        row-gap: 2vw;
-        justify-content: center;
-        align-items: center flex-start;
         flex-wrap: wrap;
-        margin-bottom: 25vh;
+        justify-content: space-around;
+        row-gap: 5vw;
     }
 
     .project-card {
         width: 30%;
-        height: 60vh;
+        height: 85vh;
+        border-radius: 15px;
+        align-items: baseline;
+        position: relative;
+
+        -webkit-box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 1);
+    }
+
+    .project-card-img-div {
+        margin: auto;
+        overflow: hidden;
+        height: 70%;
+        width: 100%;
+        border-radius: 15px;
+        transition: .5s;
+    }
+
+    .project-card-content {
+        position: relative;
         display: flex;
         flex-direction: column;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        border-radius: 15px;
-        min-width: 320px;
+        align-items: center;
+        row-gap: 0;
     }
 
-    .project-card-red {
-        background: #DA0037;
+    .project-card-content>h3 {
+        text-align: center;
+        font-size: 1.3vw;
+        /* font-size: 3vh; */
+        margin: 1.5vw auto 0;
+        padding: 0 .5vw;
     }
 
-    .project-card-white {
-        background: #ECECEC;
+    .project-card-content>p {
+        padding: 0 1vw;
+        font-size: 1vw;
     }
+
+    .project-card-button {
+        width: 80%;
+        position: absolute;
+        bottom: 2vw;
+        left: 50%;
+        transform: translate(-50%);
+
+        background-color: #DA0037;
+        border: 0;
+        border-radius: 20px;
+        padding: .5vw;
+        color: #f0f0f0;
+
+        -webkit-box-shadow: 0px 3px 0px 0px #ad002b;
+        -moz-box-shadow: 0px 3px 0px 0px #ad002b;
+        box-shadow: 0px 3px 0px 0px #ad002b;
+
+        transition: .3s;
+    }
+
+    .project-card-button:hover {
+        bottom: 1.9vw;
+        transition: .3s;
+    }
+
+    .project-card-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: -15vh;
+    }
+    
+    .project-card-img-div:hover + .card-info {
+        display: flex;
+    }
+
+    .project-card-hr {
+        border-top: 1px solid #f0f0f0;
+        width: 100%;
+    }
+
+    .project-card-title, .project-card-desc {
+        text-align: center;
+    }
+
+
+    /* SECTION */
     .section-title {
         margin-bottom: 10vh;
         text-align: center;
@@ -173,31 +230,8 @@ a:visited, a:link {
 
     .section-title hr {
         width: 30vw;
-        background-color: #ECECEC;
+        background-color: var(--font-color);
         border: 2px solid white;
-    }
-
-    .project-card-img {
-        margin-right: auto;
-        margin-left: auto;
-        width: 85%;
-        height: 60%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    .project-card-name {
-        font-size: 1.7vw;
-        margin-top: 5vw;
-        margin-left: 7.5%;
-        margin-right: 7.5%;
-        margin-bottom: 1vw;
-    }
-
-    .project-card-description {
-        font-size: 1vw;
-        margin-left: 7.5%;
-        margin-right: 7.5%;
     }
 
     .aboutme-desc {
@@ -210,17 +244,6 @@ a:visited, a:link {
     .aboutme-desc li {
         margin-top: 3vh;
         margin-bottom: 3vh;
-    }
-
-    .link:hover {
-        text-decoration: underline;
-    }
-
-    .link {
-        background-color: #DA0037;
-        padding: 0.2vw;
-        border-radius: 0.5vw;
-        text-decoration: underline;
     }
 
     ul {
@@ -255,10 +278,6 @@ a:visited, a:link {
         margin: 1vw;
     }
 
-    .fem {
-        border-radius: 50%;
-    }
-
     .contact li {
         display: flex;
         align-items: center;
@@ -274,6 +293,18 @@ a:visited, a:link {
         -moz-box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 1);
         box-shadow: 0px 0px 38px 20px rgba(0, 0, 0, 1);
         border-radius: 0.4vw;
+        height: 18vw;
+    }
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        margin: 10vh 0 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: rgba(0, 0, 0, 1) 2px solid;
     }
 }
 

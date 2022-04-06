@@ -7,114 +7,124 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/2412744261594722074.png">
+    <link rel="icon" href="./images/303903961594722075.svg">
     <title>Patryk Kulma - Portfolio</title>
 </head>
-<body id="top">
+<body>
+
     <div id="header" class="header">
         <div class="logo">
             <p>Patryk<span class="secname">Kulma</span></p>
         </div>
         <div class="navbar">
-            <a href="#top" class="nav-option" id="home">Home</a>
-            <a href="#abtme" class="nav-option" id="aboutme">About Me</a>
-            <a href="#proj" class="nav-option" id="projects">Projects</a>
-            <a href="#cont" class="nav-option" id="contact">Contact</a>
+            <a href="#home" class="nav-option" id="home-link">Home</a>
+            <a href="#about-me" class="nav-option" id="aboutme">About Me</a>
+            <a href="#project" class="nav-option" id="projects">Projects</a>
+            <a href="#contacts" class="nav-option" id="contact">Contact</a>
         </div>
     </div>
-    <div class="bigimage">
-        <img src="./images/apple-studio-display-2.png" alt="bigimage">
-        <h1 class="quote">Creating and learning with <span style="color: #DA0037;">passion</span>.</h1>
+
+    <div id="home" class="bigimage">
+        <img src="./images/apple-studio-display-2.webp" alt="bigimage">
+        <h1 class="quote">Creating and learning with <span style="color: #DA0037;">passion.</span></h1>
     </div>
-    <div class="aboutme">
+
+    <div id="about-me" class="aboutme">
         <div class="section-title">
             <h2>About me</h2>
             <hr>
         </div>
+
         <div class="aboutme-desc">
+            
             <ul>
                 <li>
-                    I am a <span style="color: #DA0037;">Junior Front End Developer</span> living in <a class="link" href="https://www.google.com/maps/place/Krak%C3%B3w/@49.7381905,18.8246454,7.5z/data=!4m5!3m4!1s0x471644c0354e18d1:0xb46bb6b576478abf!8m2!3d50.0646501!4d19.9449799?hl=en" title="Kraków, Poland" target="_blank" style="color: #ececec;">Cracow</a>, Poland.
+                    I am a Junior Front End Developer living in <a href="https://www.google.com/maps/place/Krak%C3%B3w/@49.7381905,18.8246454,7.5z/data=!4m5!3m4!1s0x471644c0354e18d1:0xb46bb6b576478abf!8m2!3d50.0646501!4d19.9449799?hl=en" title="Kraków, Poland" target="_blank">Cracow</a>, Poland.
                 </li>
                 <li>
-                    Consistency and aestethics is my key to success.
+                    Consistency and aestethics are my key to success.
                 </li>
                 <li>
-                    I am a very <span style="color: #DA0037;">creative</span> person, motivated to <span style="color: #DA0037;">work</span> and cooperative with others, if needed.
+                    I am a very creative person, motivated to work and cooperative with others, if needed.
                 </li>
                 <li>
-                    Becoming a <span style="color: #DA0037;">Front End Developer</span> or a <span style="color: #DA0037;">Full Stack Developer</span> is my goal in the future.
+                    Becoming a Front End Developer or a Full Stack Developer is my goal in the future.
                 </li>
                 <li>
-                    For now, I just study in the <a class="link" target="_blank" href="https://tl.krakow.pl/" title="Technikum Łączności nr 14 im. Obrońców Poczty Polskiej w Gdańsku w Krakowie">one of the best middle schools in Poland</a> to become good at things I want to be good at.
+                    For now, I am just studying in the <a target="_blank" href="https://tl.krakow.pl/" title="Technikum Łączności nr 14 im. Obrońców Poczty Polskiej w Gdańsku w Krakowie">one of the best middle schools in Poland</a> to become good at things I want to be good at.
                 </li>
                 <li>
-                    So let me go and do <span style="color: #DA0037;">not</span> even try to stop me, I will <span style="color: #DA0037;">always</span> reach for my dreams.
+                    So let me go and do not even try to stop me, I will always reach for my dreams.
                 </li>
             </ul>
 
         </div>
     </div>
-    <div class="section-title">
-        <h2 id="project">Projects</h2>
+    <div id="project" class="section-title">
+        <h2>Projects</h2>
         <hr>
     </div>
+
+    <!-- div.projects-lib>div.project-card>(div.project-card-img-div>img)+div.card-info>h2.project-card-title+hr.project.card.hr+p.project.card.desc -->
+    
     <div class="projects-lib">
-        <div class="project-card-red project-card">
-            <img class="project-card-img" src="./images/qr-code.jpg" alt="qrcode">
-            <div>
-                <h4 class="project-card-name">QR code component</h4>
-                <hr style="width: 85%;">
-                <p class="project-card-description">
-                    A simple way to present a QR code!
-                </p>
+        <div class="project-card">
+            <div class="project-card-img-div">
+                <img src="./images/qr code.jpg" alt="qr code" class="project-card-img">
             </div>
+            <div class="project-card-content">
+                <h3>QR Code Previev</h3>
+                <p>A simple and fun way to display a QR Code. The first project I have ever made :)</p>
+            </div>
+            <a href="https://pvczku.github.io/qr-code-component-main/" target="_blank" ><button class="project-card-button">Click to see more!</button></a>
         </div>
-        <div class="project-card-white project-card">
-            <img class="project-card-img" src="./images/apple-studio-display-2.jpg" alt="qrcode">
-            <h4 class="project-card-name">QR code component</h4>
-            <hr style="width: 85%;">
-            <p class="project-card-description">
-                A simple way to present a QR code!
-            </p>
-        </div>
-        <div class="project-card-red project-card">
-            <img class="project-card-img" src="./images/apple-studio-display-2.jpg" alt="qrcode">
-            <h4 class="project-card-name">QR code component</h4>
-            <hr style="width: 85%;">
-            <p class="project-card-description">
-                A simple way to present a QR code!
-            </p>
-        </div>
-        <div class="project-card-white project-card">
-            <img class="project-card-img" src="./images/apple-studio-display-2.jpg" alt="qrcode">
-            <h4 class="project-card-name">QR code component</h4>
-            <hr style="width: 85%;">
-            <p class="project-card-description">
-                A simple way to present a QR code!
-            </p>
-        </div>
-        <div class="project-card-red project-card">
-            <img class="project-card-img" src="./images/apple-studio-display-2.jpg" alt="qrcode">
-            <h4 class="project-card-name">QR code component</h4>
-            <hr style="width: 85%;">
-            <p class="project-card-description">
-                A simple way to present a QR code!
-            </p>
+        
+        <div class="project-card">
+            <div class="project-card-img-div">
+                <img src="./images/clipboard-landing-page-prev.jpg" alt="clipboard landing page" class="project-card-img">
+            </div>
+            <div class="project-card-content">
+                <h3>Clipboard Landing Page</h3>
+                <p>A beautiful, clean and responsive page with working hovers and more!</p>
+            </div>
+            <a href="https://pvczku.github.io/clipboard-landing-page/" target="_blank" ><button class="project-card-button">Click to see more!</button></a>
         </div>
 
-        <div id="cont">
+        <div class="project-card">
+            <div class="project-card-img-div">
+                <img src="./images/nft-card-prev.jpg" alt="nft card" class="project-card-img">
+            </div>
+            <div class="project-card-content">
+                <h3>NFT Card Preview</h3>
+                <p>A nice and simple way to display the NFT Card.</p>
+            </div>
+            <a href="https://pvczku.github.io/nft-preview-card-component-main/" target="_blank" ><button class="project-card-button">Click to see more!</button></a>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-card-img-div">
+                <img src="./images/order summary prev.jpg" alt="order summary Preview" class="project-card-img">
+            </div>
+            <div class="project-card-content">
+                <h3>Order Summary</h3>
+                <p>Clean and gorgeous presentation of the order summary.</p>
+            </div>
+            <a href="https://pvczku.github.io/order-summary-component-main/" target="_blank" ><button class="project-card-button">Click to see more!</button></a>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-card-img-div">
+                <img style="top: -5vh;" src="./images/calculator prev.jpg" alt="Calculator prev" class="project-card-img">
+            </div>
+            <div class="project-card-content">
+                <h3>Tip Calculator (<span style="color: #DA0037;">NOT FINSIHED!!!</span>)</h3>
+                <p>Working tip calculator, that is able to show how much does one person have to pay.</p>
+            </div>
+            <a href="https://pvczku.github.io/calculator/" target="_blank" ><button class="project-card-button">Click to see more!</button></a>
+        </div>
 
-        </div>
-        <div class="project-card-white project-card">
-            <img class="project-card-img" src="./images/apple-studio-display-2.jpg" alt="qrcode">
-            <h4 class="project-card-name">QR code component</h4>
-            <hr style="width: 85%;">
-            <p class="project-card-description">
-                A simple way to present a QR code!
-            </p>
-        </div>
     </div>
+
     <div class="section-title">
         <h2>Contact</h2>
         <hr>
@@ -132,10 +142,14 @@
                         <img class="contact-icon" src="./images/phone(1).png" alt="tel">
                        <a href="tel:502-819-237">+48 502 819 237</a>
                     </li>
+                    <li>
+                        
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="contact-div">
+
+        <div id="contacts" class="contact-div">
             <h2 style="color: #DA0037;" class="space-under">My links</h2>
             <div class="contact-card-content">
                 <ul>
@@ -144,7 +158,7 @@
                         <a href="https://drive.google.com/file/d/1nSWgo7dYeXWKGlJVjSTWYr1HQaSWd-i8/view?usp=sharing" target="_blank">CV</a>
                     </li>
                     <li>
-                        <img class="fem contact-icon" src="./images/fem.png" alt="FrontEndMentor">
+                        <img class="contact-icon" src="./images/fem.png" alt="FrontEndMentor">
                         <a href="https://www.frontendmentor.io/profile/pvczku" target="_blank">Front End Mentor</a> 
                     </li>
                     <li>
@@ -155,6 +169,10 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <h2>&copy; Patryk Kulma</h2>
+    </footer>
     <!-- JS SCRIPT -->
 
 </body>
